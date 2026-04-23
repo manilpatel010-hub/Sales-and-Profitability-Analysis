@@ -138,7 +138,9 @@ Improve profitability by identifying loss-making areas and optimizing pricing st
 # 🧠 SQL Analysis
 
 The following SQL queries were used to validate insights and support business recommendations:
+
 ```sql
+
 ## 1. High Sales ≠ High Profit (Category Issue)
 
 SELECT 
@@ -185,9 +187,6 @@ GROUP BY Discount
 ORDER BY Discount DESC;
 
 [SQL FILE](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/SQL)
-
-
-
 
 ---
 
