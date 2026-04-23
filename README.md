@@ -64,6 +64,9 @@ Despite strong sales performance, the business is experiencing:
 5. Dashboard Development
 6. Business Recommendations
 
+<img width="1693" height="929" alt="Process Flow" src="https://github.com/user-attachments/assets/c7957f1c-7708-4d53-88f3-a89ee8c4d079" />
+
+
 ---
 
 # 📄 Business Requirement Document (BRD)
@@ -187,7 +190,7 @@ GROUP BY Discount
 ORDER BY Discount DESC;
 ```
 
-[SQL FILE](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/SQL)
+[SQL FILE](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/Retail_Sales.sql)
 
 ---
 
@@ -200,7 +203,7 @@ ORDER BY Discount DESC;
 | BR-03       | Regional Performance Analysis | US-03      | TC-03     |
 | BR-04       | Product Profitability         | US-04      | TC-04     |
 
-[RTM DOCUMENT](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/RTM.xlsx)
+[RTM DOCUMENT](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/RTM.csv)
 
 ---
 
