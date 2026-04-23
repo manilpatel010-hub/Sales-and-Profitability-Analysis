@@ -1,4 +1,4 @@
-
+```sql
 
 -- Retail data Analysis 
 -- 1. High Sales ≠ High Profit (Category Issue)
