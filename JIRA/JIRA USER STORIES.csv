@@ -1,0 +1,10 @@
+﻿Issue Type,Key,Summary,Assignee,Reporter,Priority,Status,Resolution,Created,Updated,Due date
+Story,SCRUM-12,"As a QA Analyst,  I want to validate all calculations and dashboards, so that data accuracy is ensured",,MANIL PATEL,High,To Do,,20-04-2026 12:31,20-04-2026 12:31,30-04-2026
+Story,SCRUM-11,"As a Business Analyst,  I want to prepare insights and recommendations, so that stakeholders can take business decisions.",,MANIL PATEL,Medium,To Do,,20-04-2026 12:29,20-04-2026 12:40,29-04-2026
+Story,SCRUM-10,"As a Business User,  I want an interactive dashboard, so that I can visualize sales and profit insights.",,MANIL PATEL,Highest,In Review,,20-04-2026 12:27,20-04-2026 12:39,28-04-2026
+Story,SCRUM-9,"As a Business Analyst,  I want to analyze region-wise sales and profit, so that I can identify underperforming regions.",,MANIL PATEL,Medium,Testing,,20-04-2026 12:22,20-04-2026 12:39,22-04-2026
+Story,SCRUM-8,"As a Business Analyst,  I want to analyze the impact of discount on profit, so that I can identify margin leakage.",,MANIL PATEL,High,Done,Done,20-04-2026 12:20,20-04-2026 12:38,18-04-2026
+Story,SCRUM-7,"As a Business Analyst,  I want to analyze category-wise performance, so that I can identify profitable and loss-making categories.",,MANIL PATEL,Medium,Done,Done,20-04-2026 12:09,20-04-2026 12:37,16-04-2026
+Story,SCRUM-6,"As a Business Analyst,  I want to analyze total sales and profit across the dataset, so that I can identify overall business performance.",,MANIL PATEL,High,Done,Done,20-04-2026 12:01,20-04-2026 12:37,14-04-2026
+Subtask,SCRUM-4,Subtask 2.1,,MANIL PATEL,,To Do,,18-04-2026 22:06,18-04-2026 22:06,
+,,,,,,,,,,
