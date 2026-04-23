@@ -91,6 +91,8 @@ Improve profitability by identifying loss-making areas and optimizing pricing st
 * Calculate sales, profit, and margin
 * Visualize category, region, and product insights
 
+[BRD DOCUMENT](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/BRD%20for%20Retail%20sales.docx)
+
 ---
 
 # 📊 Dataset
@@ -102,7 +104,7 @@ Improve profitability by identifying loss-making areas and optimizing pricing st
   * Category, Sub-Category
   * Region, State
 
-📎 Available in `/data`
+ [DATASET](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/retail_data.csv)
 
 ---
 
@@ -114,6 +116,9 @@ Improve profitability by identifying loss-making areas and optimizing pricing st
 * Category Performance
 * Regional Profit Analysis
 * Loss-Making Sub-Categories
+
+[DASHBOARD 1](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/Power%20BI/Dashboard%201.png)
+
 
 ## Page 2: Root Cause Analysis
 
