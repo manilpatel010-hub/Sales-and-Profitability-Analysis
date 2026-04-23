@@ -220,7 +220,7 @@ ORDER BY Discount DESC;
 ## User story
 <img width="1065" height="803" alt="User Story" src="https://github.com/user-attachments/assets/d97f0aee-f59f-4533-af01-39c0e8f19906" />
 
-JIRA dOCUMENT
+[JIRA dOCUMENT](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/JIRA/JIRA%20USER%20STORIES.csv)
 
 
 ---
