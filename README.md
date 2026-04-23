@@ -117,7 +117,8 @@ Improve profitability by identifying loss-making areas and optimizing pricing st
 * Regional Profit Analysis
 * Loss-Making Sub-Categories
 
-[DASHBOARD 1](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/Power%20BI/Dashboard%201.png)
+<img width="1356" height="747" alt="Dashboard 1" src="https://github.com/user-attachments/assets/a9ef1fc1-0a5e-4aa3-a55c-a8195f7405f2" />
+
 
 
 ## Page 2: Root Cause Analysis
@@ -127,7 +128,10 @@ Improve profitability by identifying loss-making areas and optimizing pricing st
 * Monthly Trends
 * Product Performance
 
-📎 `/dashboard/Retail_Dashboard.pbix`
+<img width="1363" height="767" alt="Dashboard 2" src="https://github.com/user-attachments/assets/0c45f3c4-e20a-4a3c-af66-2ef5c70b4076" />
+
+
+[POWER BI](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/Power%20BI/Retail%20sales%20%26%20profitability%20Analysis.pbix)
 
 ---
 
@@ -135,55 +139,55 @@ Improve profitability by identifying loss-making areas and optimizing pricing st
 
 The following SQL queries were used to validate insights and support business recommendations:
 
-## 1. Category Performance
+## 1. High Sales ≠ High Profit (Category Issue)
 
-```sql
-SELECT Category,
-       SUM(Sales) AS Total_Sales,
-       SUM(Profit) AS Total_Profit,
-       ROUND(SUM(Profit)/SUM(Sales),2) AS Profit_Margin
-FROM superstore
-GROUP BY Category;
-```
+SELECT 
+    Category,
+    SUM(Sales) AS Total_Sales,
+    SUM(Profit) AS Total_Profit,
+    ROUND(SUM(Profit) / SUM(Sales), 2) AS Profit_Margin
+FROM retail.retail_data
+GROUP BY Category
+ORDER BY Total_Sales DESC;
 
 ## 2. Loss-Making Sub-Categories
 
-```sql
-SELECT Sub_Category,
-       SUM(Profit) AS Total_Profit
-FROM superstore
-GROUP BY Sub_Category
-HAVING SUM(Profit) < 0;
-```
+SELECT 
+    `Sub-Category`, 
+    SUM(Profit) AS Total_Profit
+FROM retail.retail_data
+GROUP BY `Sub-Category`
+HAVING SUM(Profit) < 0
+ORDER BY Total_Profit ASC;
 
-## 3. Discount Impact
+## 3. Discount Impact on Profit
 
-```sql
-SELECT Discount,
-       AVG(Profit) AS Avg_Profit
-FROM superstore
-GROUP BY Discount;
-```
+SELECT 
+    Discount,
+    COUNT(*) AS Orders_Count,
+    AVG(Profit) AS Avg_Profit,
+    SUM(Profit) AS Total_Profit
+FROM retail.retail_data
+GROUP BY Discount
+ORDER BY Discount;
 
-## 4. Regional Performance
+## 4. High Discount = Loss
 
-```sql
-SELECT Region,
-       SUM(Sales) AS Total_Sales,
-       SUM(Profit) AS Total_Profit
-FROM superstore
-GROUP BY Region;
-```
+SELECT 
+    Discount,
+    SUM(CASE WHEN Profit < 0 THEN 1 ELSE 0 END) AS Loss_Orders,
+    COUNT(*) AS Total_Orders,
+    ROUND(
+        SUM(CASE WHEN Profit < 0 THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2
+    ) AS Loss_Percentage
+FROM retail.retail_data
+GROUP BY Discount
+ORDER BY Discount DESC;
 
-## 5. Top & Worst Products
+[SQL FILE](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/SQL)
 
-```sql
-SELECT Product_Name,
-       SUM(Profit) AS Total_Profit
-FROM superstore
-GROUP BY Product_Name
-ORDER BY Total_Profit DESC;
-```
+
+
 
 ---
 
@@ -195,6 +199,8 @@ ORDER BY Total_Profit DESC;
 | BR-02       | Discount Impact Analysis      | US-02      | TC-02     |
 | BR-03       | Regional Performance Analysis | US-03      | TC-03     |
 | BR-04       | Product Profitability         | US-04      | TC-04     |
+
+[RTM DOCUMENT](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/RTM.xlsx)
 
 ---
 
