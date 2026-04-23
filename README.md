@@ -121,7 +121,7 @@ Improve profitability by identifying loss-making areas and optimizing pricing st
 
 
 
-## Page 2: Root Cause Analysis
+## Page 2: Deep Dive  Analysis
 
 * Discount vs Profit
 * State-Level Sales
@@ -185,6 +185,7 @@ SELECT
 FROM retail.retail_data
 GROUP BY Discount
 ORDER BY Discount DESC;
+```
 
 [SQL FILE](https://github.com/manilpatel010-hub/Sales-and-Profitability-Analysis/blob/main/SQL)
 
@@ -210,7 +211,17 @@ ORDER BY Discount DESC;
 * Sprint-based execution
 * Task tracking
 
-📎 `/docs/JIRA_User_Stories.md`
+## Jira Board
+<img width="1203" height="810" alt="JIRA Board" src="https://github.com/user-attachments/assets/cbd3d81d-7106-4f2e-a2a2-3d9f964afb33" />
+
+## Backlog
+<img width="1688" height="660" alt="Backlog - sprint" src="https://github.com/user-attachments/assets/a78f31f9-f4ed-467a-8ee9-d2793103f1c6" />
+
+## User story
+<img width="1065" height="803" alt="User Story" src="https://github.com/user-attachments/assets/d97f0aee-f59f-4533-af01-39c0e8f19906" />
+
+JIRA dOCUMENT
+
 
 ---
 
@@ -263,5 +274,7 @@ This project demonstrates:
 * SQL and data analysis skills
 * Dashboard storytelling
 * Ability to convert data into decisions
+
+
 
 ---
