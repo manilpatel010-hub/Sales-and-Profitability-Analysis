@@ -1,0 +1,7 @@
+﻿Requirement traceability Matrix (RTM),,,,
+Req ID,Business Requirement,User Story / Functional Requirement,Test Case ID,Expected Outcome
+BR-01,Analyze product profitability,"As a BA, I want to identify profit by category",TC-01,Category-wise profit report generated
+BR-02,Identify loss-making products,"As a user, I want to see unprofitable products",TC-02,Loss-making products listed correctly
+BR-03,Analyze discount impact,"As a manager, I want to see discount effect on profit",TC-03,Discount vs profit trend visible
+BR-04,Regional performance analysis,"As a stakeholder, I want region-wise insights",TC-04,Region dashboard shows sales & profit
+BR-05,Improve reporting efficiency,"As a user, I want faster reporting",TC-05,Dashboard loads within <1 hour refresh
